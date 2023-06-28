@@ -1,0 +1,6 @@
+<div class="ion-padding-top">
+  <ion-text>
+    <h4>{{ sub_category && sub_category.name }}</h4>
+    <app-product [product]="item" *ngFor="let item of sub_category.products" />
+  </ion-text>
+</div>

@@ -1,0 +1,8 @@
+<ion-card>
+  <ion-card-content>
+    <ion-text>
+      <h1>{{ category && category.name }}</h1>
+      <app-sub-category [sub_category]="item" *ngFor="let item of category.sub_categories" />
+    </ion-text>
+  </ion-card-content>
+</ion-card>

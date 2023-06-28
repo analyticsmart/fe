@@ -1,0 +1,10 @@
+<ion-content [fullscreen]="true">
+  <ion-row>
+    <ion-col *ngFor="let item of categories">
+      <app-category [category]="item" />
+    </ion-col>
+  </ion-row>
+  <div class="ion-padding">
+    <app-updates />
+  </div>
+</ion-content>
