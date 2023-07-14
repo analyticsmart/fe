@@ -11,6 +11,14 @@ export class SubCategoryComponent  implements OnInit {
 
   @Input() sub_category: any;
 
-  ngOnInit() { }
+  ngOnInit() { 
+    for(let index in this.sub_category.products){
+      this.sub_category.products[index].sub_category = {
+        name: this.sub_category.name
+        , id: this.sub_category.id,
+        category: this.sub_category.category
+      }
+    }
+  }
 
 }

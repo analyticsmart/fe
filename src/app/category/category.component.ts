@@ -11,6 +11,13 @@ export class CategoryComponent  implements OnInit {
 
   @Input() category: any;
 
-  ngOnInit() {}
+  ngOnInit() {
+    for(let index in this.category.sub_categories){
+      this.category.sub_categories[index].category = {
+        name: this.category.name
+        , id: this.category.id
+      }
+    }
+  }
 
 }

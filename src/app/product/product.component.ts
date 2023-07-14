@@ -17,6 +17,7 @@ export class ProductComponent  implements OnInit {
   }
 
   update(){
+    console.log(this.product, 'product')
     this.product.name = this.product_name
   }
 }
