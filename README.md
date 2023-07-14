@@ -11,6 +11,6 @@
     - Product Component - Holds an editable input of the product name
     - Updates Component - Holds the latest changes being made from Products
  
-## Expected Result
+## The Challenge
 - When editing the product name, we need to get the previous value, current value and which category, sub category it falls and populate it in Updates Component
 - Explain the strategy on how you solve the problem and give any other ways to get the same expected result if there is any
